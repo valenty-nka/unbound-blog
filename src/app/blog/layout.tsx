@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import { sanityClient } from "@/lib/sanity.client";
 import { allCategoriesQuery } from "@/lib/sanity.queries";
 import BlogTopNav from "@/components/BlogTopNav";
+import { Suspense } from "react";
 
 export const revalidate = 3600; // cache for 1 hour
 
@@ -20,7 +21,9 @@ export default async function BlogLayout({
     <main>
       <section className="pb-24 md:pb-32">
         <Container>
-          <BlogTopNav categories={categories} />
+          <Suspense fallback={null}>
+            <BlogTopNav categories={categories} />
+          </Suspense>  
           {children}
         </Container>
       </section>
