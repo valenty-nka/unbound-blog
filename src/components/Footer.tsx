@@ -31,6 +31,10 @@ export default function Footer() {
               <a href="https://www.linkedin.com/in/valentyna-nechyporenko/" className="hover:text-offwhite transition">
                 LinkedIn
               </a>
+              <a href="https://substack.com/@unboundbyv" className="hover:text-offwhite transition">
+                Substack
+              </a>
+              
             </div>
           </div>
 
