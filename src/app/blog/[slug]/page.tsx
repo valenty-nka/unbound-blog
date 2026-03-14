@@ -30,10 +30,11 @@ const components: PortableTextComponents = {
         <figure className="my-10">
           ...
           <Image
-            src={urlFor(img).width(1600).height(900).url()}
+            src={urlFor(img).width(1200).quality(80).auto("format").url()}
             alt={img.alt ?? ""}
-            fill
-            className="object-cover"
+            width={1200}
+            height={800}
+            className="w-full h-auto rounded-xl"
           />
           {img.caption ? (
             <figcaption className="mt-3 text-sm text-secondary">
