@@ -65,6 +65,9 @@ export const metadata: Metadata = {
       "Thoughts on building in public, personal growth, systems, and entrepreneurship.",
     images: ["/og-image.jpg"],
   },
+  other: {
+    "p:domain_verify": "d6d55dc87d6332a4514adfdc73dff6fe",
+  },
 };
 
 export default function RootLayout({
