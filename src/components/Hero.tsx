@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="relative h-[78vh] md:h-[82vh] min-h-125 w-full mt-2">
         <Image
-          src="/hero_img.jpeg"
+          src="/hero_img.jpg"
           alt="Editorial interior"
           fill
           priority
