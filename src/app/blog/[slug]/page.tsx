@@ -134,8 +134,23 @@ export default async function PostPage({
             ) : null}
 
             {/* body */}
-           <div className="mt-12 article prose max-w-none prose-p:leading-8 prose-p:text-[17px] prose-neutral prose-a:text-charcoal prose-a:underline prose-a:underline-offset-4 prose-a:decoration-accent/40 hover:prose-a:decoration-accent prose-blockquote:border-l-4 prose-blockquote:border-accent/30 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-accent/90">
-              <PortableText value={post.body } components={components} />   
+<div className="mt-12 article prose max-w-none prose-neutral
+                prose-h3:text-xl
+                prose-h3:font-semibold
+                prose-h3:mt-12
+                prose-h3:mb-4
+                prose-h3:text-charcoal
+                prose-a:text-charcoal
+                prose-a:underline
+                prose-a:underline-offset-4
+                prose-a:decoration-accent/40
+                hover:prose-a:decoration-accent
+                prose-blockquote:border-l-4
+                prose-blockquote:border-accent/30
+                prose-blockquote:pl-6
+                prose-blockquote:italic
+                prose-blockquote:text-accent/90">
+                <PortableText value={post.body } components={components} />   
             </div>
             {post.related?.length ? (
               <section className="mt-16">
