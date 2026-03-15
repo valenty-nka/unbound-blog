@@ -25,10 +25,8 @@ const components: PortableTextComponents = {
       const img = value as { asset?: unknown; alt?: string; caption?: string };
       if (!img?.asset) return null;
 
-
       return (
         <figure className="my-10">
-          ...
           <Image
             src={urlFor(img).width(1200).quality(80).auto("format").url()}
             alt={img.alt ?? ""}
@@ -44,6 +42,19 @@ const components: PortableTextComponents = {
         </figure>
       );
     },
+  },
+
+  marks: {
+    link: ({ value, children }) => (
+      <a
+        href={value?.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent underline underline-offset-4 decoration-accent/40 hover:decoration-accent"
+      >
+        {children}
+      </a>
+    ),
   },
 };
 
