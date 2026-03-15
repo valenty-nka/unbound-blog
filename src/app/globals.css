@@ -45,7 +45,8 @@
   font-family: var(--font-heading);
   font-size: 1.5rem;      
   line-height: 1.25;
-  font-weight: 600;        
+  font-weight: 600; 
+  text-transform: uppercase;       
   letter-spacing: -0.01em;
   color: var(--color-charcoal);
 }
@@ -57,7 +58,7 @@
   font-family: var(--font-body);
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-accent-light);
   line-height: 1.6;
 }
   .article blockquote {
