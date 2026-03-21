@@ -6,7 +6,6 @@ import { allCategoriesQuery } from "@/lib/sanity.queries";
 import BlogTopNav from "@/components/BlogTopNav";
 import { Suspense } from "react";
 
-export const revalidate = 3600;
 
 export default async function BlogLayout({
   children,

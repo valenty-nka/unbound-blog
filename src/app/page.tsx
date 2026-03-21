@@ -4,7 +4,7 @@ import LatestGrid from "@/components/LatestGrid";
 import { sanityClient } from "@/lib/sanity.client";
 import { featuredPostsQuery, latestPostsQuery, homePostsQuery } from "@/lib/sanity.queries";
 
-
+export const dynamic = "force-dynamic";
 
 
 export default async function Home() {
