@@ -12,7 +12,7 @@ export default function BlogTopNav({ categories }: { categories: string[] }) {
 
   return (
     <div className="pt-16 md:pt-20">
-      <div className="grid grid-cols-3 items-center">
+      <div className="grid grid-cols-4 md:grid-cols-3 items-center">
         {/* Back only on post pages */}
         <div className="justify-self-start">
           {onPostPage ? (
