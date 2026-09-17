@@ -7,12 +7,12 @@ export default function Hero() {
       {/* Background image */}
       <div className="relative h-[78vh] md:h-[82vh] min-h-125 w-full mt-2">
         <Image
-          src="/hero_img.jpg"
+          src="/hero_img-new.jpg"
           alt="Editorial interior"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover bg-center"
           quality={85}
         />
         {/* Subtle darkening for readability */}
@@ -20,28 +20,28 @@ export default function Hero() {
       </div>
 
       {/* Center overlay card */}
-        <div className="absolute inset-0 flex items-center justify-center px-4">
-          <div className="w-full max-w-2xl rounded-xl border border-charcoal/10 bg-offwhite/90 p-8 md:p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur">
-            <p className="text-xs tracking-[0.22em] uppercase text-secondary">
-             Start here
-            </p>
+      <div className="absolute inset-0 flex items-center justify-center px-4">
+        <div className="w-full max-w-2xl rounded-xl border border-charcoal/10 bg-offwhite/90 p-8 md:p-12 text-center shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur">
+          <p className="text-xs tracking-[0.22em] uppercase text-secondary">
+            Start here
+          </p>
 
-            <h2 className="mt-4">
-              Turning ideas into reality.
-            </h2>
+          <h2 className="mt-4">
+            The chaos of building a new life from scratch — the habits, mindset,
+            and discipline it takes to lay a real foundation for the future you
+            actually want.
+          </h2>
 
-            <p className="mt-4 text-secondary">
-              On thinking well and living deliberately.
-            </p>
+          <p className="mt-4 text-secondary">
+            One honest essay about money, discipline, and the unglamorous work
+            of becoming. No fluff. Just the real thing.
+          </p>
 
-            <div className="mt-8 flex items-center justify-center gap-4">
-              <Button href="/blog">
-                Read the blog
-            </Button>
-
-            </div>
+          <div className="mt-8 flex items-center justify-center gap-4">
+            <Button href="/blog">Read the blog</Button>
           </div>
         </div>
+      </div>
     </section>
   );
 }

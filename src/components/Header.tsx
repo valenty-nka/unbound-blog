@@ -36,9 +36,8 @@ export default function Header() {
               </span>
             </h1>
           </Link>
-
-          <p className="mt-4 text-sm tracking-wide text-secondary">
-            Turning ideas into reality.
+          <p className="mt-4 text-xs tracking-[0.3em] uppercase text-accent-light">
+            Thinking • Building • Becoming
           </p>
         </div>
 

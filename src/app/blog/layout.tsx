@@ -6,13 +6,13 @@ import { allCategoriesQuery } from "@/lib/sanity.queries";
 import BlogTopNav from "@/components/BlogTopNav";
 import { Suspense } from "react";
 
-
 export default async function BlogLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const categoryDocs: { title: string }[] = await sanityClient.fetch(allCategoriesQuery);
+  const categoryDocs: { title: string }[] =
+    await sanityClient.fetch(allCategoriesQuery);
 
   const categories = categoryDocs
     .map((c) => c.title)

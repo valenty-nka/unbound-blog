@@ -20,21 +20,30 @@ export default function Footer() {
             </p>
 
             <p className="mt-4 max-w-md text-offwhite/80">
-              On thinking well and living deliberately.
+              One honest essay about money, discipline, and the unglamorous work
+              of becoming. No fluff. Just the real thing.
             </p>
 
             <div className="mt-8 flex gap-5 text-offwhite/80">
               {/* Placeholder socials (swap to real links later) */}
-              <a href="https://ca.pinterest.com/unbound_by_v/" className="hover:text-offwhite transition">
+              <a
+                href="https://ca.pinterest.com/unbound_by_v/"
+                className="hover:text-offwhite transition underline-offset-6 underline underline-white"
+              >
                 Pinterest
               </a>
-              <a href="https://www.linkedin.com/in/valentyna-nechyporenko/" className="hover:text-offwhite transition">
+              <a
+                href="https://www.linkedin.com/in/valentyna-nechyporenko/"
+                className="hover:text-offwhite transition underline-offset-6 underline underline-white"
+              >
                 LinkedIn
               </a>
-              <a href="https://substack.com/@unboundbyv" className="hover:text-offwhite transition">
+              <a
+                href="https://substack.com/@unboundbyv"
+                className="hover:text-offwhite transition underline-offset-6 underline underline-white"
+              >
                 Substack
               </a>
-              
             </div>
           </div>
 
@@ -48,8 +57,14 @@ export default function Footer() {
               Get new posts in your inbox.
             </h3>
 
-            <p className="mt-3 text-offwhite/80">
-              No spam. Just the good stuff. (Launching soon.)
+            <p className="mt-4 text-offwhite/80">
+              <a
+                target="_blanck"
+                href="https://substack.com/@unboundbyv"
+                className=" px-6 py-3 capitalize text-lg border text-white hover:text-accent-very-light border-white hover:border-accent-light transition-colors ease-in rounded-3xl"
+              >
+                Subscribe on substack
+              </a>
             </p>
           </div>
         </div>
