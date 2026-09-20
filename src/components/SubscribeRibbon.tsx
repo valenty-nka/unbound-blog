@@ -1,6 +1,4 @@
 "use client";
-
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function SubscribeRibbon() {
@@ -18,7 +16,7 @@ export default function SubscribeRibbon() {
   if (!visible) return null;
 
   return (
-    <div className="sticky top-0 z-50 bg-charcoal text-offwhite">
+    <div className="sticky top-0 z-50 bg-accent text-offwhite">
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 sm:px-6 sm:py-4">
         {/* Text — stacks on mobile, inline on larger screens */}
         <div className="flex min-w-0 flex-1 flex-col sm:flex-row sm:items-baseline sm:gap-3">
@@ -33,7 +31,7 @@ export default function SubscribeRibbon() {
         {/* Subscribe */}
         <a
           href="https://substack.com/@unboundbyv"
-          className="shrink-0 rounded-sm bg-accent px-4 py-2 sm:px-6 sm:py-2.5 text-[10px] sm:text-xs tracking-[0.22em] uppercase text-offwhite hover:opacity-90 transition"
+          className="shrink-0 rounded-sm bg-offwhite px-4 py-2 sm:px-6 sm:py-2.5 text-[10px] sm:text-xs tracking-[0.22em] uppercase text-accent hover:opacity-90 transition"
         >
           Subscribe <span aria-hidden>→</span>
         </a>

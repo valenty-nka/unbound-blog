@@ -7,12 +7,12 @@
   --font-script: var(--font-great-vibes);
 
   /* colors */
-  --color-offwhite: #F8F7F4;
-  --color-charcoal: #1F1F1D;
-  --color-secondary: #6B6B66;
-  --color-accent: #5E6B4E;
-  --color-accent-light: #8A9675;
-  --color-accent-very-light: #E8ECE4;
+  --color-offwhite: #f8f7f4;
+  --color-charcoal: #1f1f1d;
+  --color-secondary: #6b6b66;
+  --color-accent: #372b2d;
+  --color-accent-light: ##372b2d;
+  --color-accent-very-light: #afaaab;
 }
 
 @layer components {
@@ -37,30 +37,29 @@
     letter-spacing: -0.01em;
   }
 
+  /* H3 — Subsection */
+  .article h3 {
+    margin-top: 3rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: var(--color-charcoal);
+  }
 
-/* H3 — Subsection */
-.article h3 {
-  margin-top: 3rem;
-  margin-bottom: 0.75rem;
-  font-family: var(--font-heading);
-  font-size: 1.5rem;      
-  line-height: 1.25;
-  font-weight: 600; 
-  text-transform: uppercase;       
-  letter-spacing: -0.01em;
-  color: var(--color-charcoal);
-}
-
-/* H4 — Highlight / Emphasis line */
-.article h4 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-family: var(--font-body);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--color-accent-light);
-  line-height: 1.6;
-}
+  /* H4 — Highlight / Emphasis line */
+  .article h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-accent-light);
+    line-height: 1.6;
+  }
   .article blockquote {
     margin-top: 2.5rem;
     padding-left: 1.5rem;
@@ -78,10 +77,7 @@
   .article li {
     margin-top: 0.75rem;
   }
-  
 }
-
-
 
 @layer base {
   html {
@@ -96,31 +92,40 @@
     font-family: var(--font-body);
 
     /* Body scale (premium feel) */
-    font-size: 17px;      /* text-[17px] */
-    line-height: 2rem;    /* leading-8 */
+    font-size: 17px; /* text-[17px] */
+    line-height: 2rem; /* leading-8 */
   }
 
   /* Headings: Cormorant Garamond */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
-    font-weight: 500;     /* font-medium */
+    font-weight: 500; /* font-medium */
     letter-spacing: -0.01em;
   }
 
   /* H1: text-4xl md:text-5xl + leading-tight */
   h1 {
-    font-size: 2.25rem;   /* text-4xl */
-    line-height: 1.1;     /* leading-tight-ish */
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 1.1; /* leading-tight-ish */
   }
 
   /* H2: text-2xl md:text-3xl */
   h2 {
-    font-size: 1.5rem;    /* text-2xl */
+    font-size: 1.5rem; /* text-2xl */
     line-height: 1.2;
   }
 
   @media (min-width: 768px) {
-    h1 { font-size: 3rem; }       /* text-5xl */
-    h2 { font-size: 1.875rem; }   /* text-3xl */
+    h1 {
+      font-size: 3rem;
+    } /* text-5xl */
+    h2 {
+      font-size: 1.875rem;
+    } /* text-3xl */
   }
 }

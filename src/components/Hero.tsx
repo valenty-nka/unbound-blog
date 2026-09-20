@@ -34,7 +34,7 @@ export default function Hero() {
 
           <p className="mt-4 text-secondary">
             One honest essay about money, discipline, and the unglamorous work
-            of becoming. No fluff. Just the real thing.
+            of becoming.
           </p>
 
           <div className="mt-8 flex items-center justify-center gap-4">
